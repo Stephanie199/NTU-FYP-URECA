@@ -7,7 +7,7 @@ In this context, word boundary is referred to the punctuations in the sentence, 
 
 The implementation of the SUD: Conditional Random Fields
 
-Machine Learning Tools used: CRF++, SENNA Parser
+Machine Learning Tools : CRF++, SENNA Parser
 
 Features : Language Model; n-grams (3 WordBefore + 2 WordAfter) ; Tokens (biagram); Part Of Speech tag & Chunking - IOBES tag
 
