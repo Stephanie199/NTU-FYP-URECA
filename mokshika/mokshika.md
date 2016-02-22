@@ -1,1 +1,0 @@
-mokshika.md
