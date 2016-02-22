@@ -1,0 +1,78 @@
+20001	World Economies
+20002	Violence in Gaza
+20004	Internet Law
+20005	Philipines Elections
+20006	Israel Politics
+20008	Golf
+20009	Music
+20010	Disasters
+20011	Bill Clinton
+20012	Religion
+20013	Olympics
+20014	World Affairs
+20015	Iraq
+20016	Crime in US
+20017	US Government
+20018	Terrorism
+20019	Military Disasters
+20020	Air Crash
+20021	Climate
+20022	Navy Crime
+20023	Terrorism
+20024	Georgian Military
+20025	Taliban
+20026	Celebrity News
+20029	World Markets
+20030	Oscar Schindler
+20031	Astronomy
+20032	US Military
+20033	Football
+20035	Middle East
+20036	Crime in Florida
+20037	New York Mayor
+20040	Crime in Israel
+20041	Delaware Crime
+20042	Space Travel
+20044	Health&Drugs
+20046	Geography
+20048	Basketball
+20050	Marine Life
+20052	Germany Elections
+20053	Election Laws
+20056	Martin Luther King
+20057	Skating
+20059	Violence in Schools
+20060	War Museum
+20061	Kenyan Economy
+20062	Angola Economy
+20063	Crime in Colombia
+20064	World Harmony
+20065	NASA
+20066	National Football League
+20067	Ecological Disasters
+20068	Cancer Research
+20069	Jimmy Carter
+20070	India-Pakistan Relations
+20071	Middle east relations
+20072	Broadway Awards
+20074	Crime in Nigeria
+20075	US Immigration Laws
+20076	Indonesia Students Protests
+20078	Denmark Union Workers
+20079	Crime in Turkey
+20082	Vandalism in Florida
+20083	Medical Conferences
+20084	Employment in US
+20085	Saudi Soccer Team
+20086	Michigan Worker Strikes
+20088	Indonesia Riots
+20089	Earthquakes
+20091	Transport Disasters
+20092	Health Research
+20093	Political Strikes
+20094	Art
+20095	Turkey Politics
+20097	Music
+20098	Cuban Refugees
+20099	Terrorism
+20100	US Financial Markets
