@@ -93,7 +93,7 @@
 								<img src="img/lang/en.png" style="margin-right:3px" />
 								</div>
 								<p>
-								 <br /><br />[Type description of project here]<br /><br />
+								 <br /><br />This project aims to detect topics for unlabeled news documents. The news document will be tagged with the topic with the highest probability along with the other top 5 probable topics. <br /><br />
 								</p>	
 							</div>
 							<div class="box-bottom">
