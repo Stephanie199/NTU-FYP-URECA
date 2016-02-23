@@ -1,5 +1,5 @@
 <?php
-  include "en_sud_functions.php";
+  include "vi_sud_extensions.php";
   $text = strtolower($_POST["text"]);
   $language = $_POST["language"];
 
@@ -21,7 +21,28 @@
         $result = highlightSentences($sentences);
 
         unlink($crfTestInput);
-    }else{
+    }
+    elseif ($language == 'vietnamese')
+      {
+        $tokInput = "data-vi/tokInput.txt";
+        $tokOutput = "data-vi/tokOutput.txt";
+        $model = "data-vi/model_TNO15.txt";
+        $crfTestInput = "data-vi/crfTestInput.txt";
+        $crfTestOutput = "data-vi/crfTestOutput.txt";
+        $tempResult = "data-vi/tempResult.txt";
+
+        writeToTextFileUTF($tokInput, $text, "w");
+        execTok($tokInput, $tokOutput);
+        formatTokOutput($tokOutput, $crfTestInput);
+        execCrfTest($model, $crfTestInput, $crfTestOutput);
+
+
+        $sentences = getSentencesUTF ($crfTestOutput);
+        $result = highlightSentences($sentences);
+
+        unlink ($crfTestInput);
+      }
+    else{
         $result = "Do Some Function Here!";
     }
     
