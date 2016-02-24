@@ -21,9 +21,7 @@
         $result = highlightSentences($sentences);
 
         unlink($crfTestInput);
-    }
-    elseif ($language == 'vietnamese')
-      {
+    }else{ //language = vietnamese 
         $tokInput = "data-vi/tokInput.txt";
         $tokOutput = "data-vi/tokOutput.txt";
         $model = "data-vi/model_TNO15.txt";
@@ -36,13 +34,10 @@
         formatTokOutput($tokOutput, $crfTestInput);
         execCrfTest($model, $crfTestInput, $crfTestOutput);
 
-
         $sentences = getSentencesUTF ($crfTestOutput);
         $result = highlightSentences($sentences);
 
         unlink ($crfTestInput);
-      }
-    else{
         $result = "Do Some Function Here!";
     }
     
