@@ -1,18 +1,25 @@
 <?php
   include "en_sud_functions.php";
-  $text = strtolower($_POST["text"]);
-  $language = $_POST["language"];
+  include "en_data_preprocessing.php";
 
+  
   if(!empty($_POST)){
-    if($language == 'english'){
+    $text = strtolower($_POST["text"]);
+    $language = $_POST["language"];
+
+    if(trim($text)==""){
+        echo "<script>alert('Input is empty!');window.history.go(-1);</script>";
+    }else{
+      if($language == 'english'){
         $sennaInput = "data-en/sennaInput.txt";
         $sennaOutput = "data-en/sennaOutput.txt";
-        $model = "data-en/model_rt04.txt";
+        $model = "data-en/model/train.model";
         $crfTestInput = "data-en/crfTestInput.txt";
         $crfTestOutput = "data-en/crfTestOutput.txt";
         $tempResult = "data-en/tempResult.txt";
 
-        writeToTextFile($sennaInput,$text,"w");
+        $cleanText = cleanText($text);
+        writeToTextFile($sennaInput,$cleanText,"w");
         execSenna($sennaInput,$sennaOutput);
         formatSennaOutput($sennaOutput,$crfTestInput);
         execCrfTest($model,$crfTestInput,$crfTestOutput);
@@ -21,8 +28,11 @@
         $result = highlightSentences($sentences);
 
         unlink($crfTestInput);
-    }else{
+      }else{ //language = vietnamese
+        $cleanText = "Clean Text Here!";
         $result = "Do Some Function Here!";
+      }  
+
     }
     
   }
@@ -68,7 +78,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="../img/NTULogo.png" width="20%" /></a>
+                    <a class="navbar-brand" href="../index.php"><img src="../img/NTULogo.png" width="20%" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
@@ -116,9 +126,16 @@
       <br />
       <div class="row">
         <div class="form-group">
+          <div align="center"><h4>This is the text to be processed (without any punctuations):</h4></div> 
+          <hr />
+          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php echo $cleanText; ?></h5></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
           <div align="center"><h4>Here are the sentences:</h4></div> 
           <hr />
-          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php echo $result ?></h5></div>
+          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php echo $result; ?></h5></div>
         </div>
       </div>
     </div>
@@ -154,10 +171,9 @@
              which were generated using SENNA parser.
           </p>
           <p>
-              The model was generated from training RT-04 corpus, which is a broadcasting news transcript.
-              The resulting models were cross-evaluated on various test set, such as Gigaword English 2002 (newspaper text), 
-              RT-04 and Ted Talk transcript. The newly developed models performed relatively well in terms of average F1-score
-              (62.7%) and NIST error rate (72.17%).
+              The model was generated from training the combined corpus of Gigaword English 2002 (newspaper text), RT-04 (broadcast news transcript) 
+              and Ted Talk English transcript. The resulting models were cross-evaluated across different test set. 
+              The newly developed models performed relatively well in terms of average F1-score (71.63%) and NIST error rate (51.38%).
           </p>
           <p>
               The evaluation of the performance shows that the syntatic information played an important role as the additional information in

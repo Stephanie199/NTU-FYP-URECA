@@ -64,6 +64,8 @@ function getSentences($file){
     	$result = trim($parts[3]);
     	$word = trim($parts[0]);
 
+    	#echo $result;
+
     	if($result==0){
     		$str = $str.$word." ";	
     	}else{
@@ -76,28 +78,5 @@ function getSentences($file){
     return $str;
 }
 
-function getLines($file)
-{
-    $f = fopen($file, 'rb');
-    $lines = 0;
-
-    while (!feof($f)) {
-        $lines += substr_count(fread($f, 8192), "\n");
-    }
-    fclose($f);
-
-    return $lines;
-}
-
-function getResult($file){
-	$fileArray = file($file);
-	$file = array_filter(array_map('trim',$fileArray),'strlen');
-
-	$lastLine = $file[count($file) - 1];
-	$arrayOfResult = explode("\t",$lastLine);
-	$result = $arrayOfResult[4];
-	
-	return $result;
-}
 
 ?>

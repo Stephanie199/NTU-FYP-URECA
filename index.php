@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/NTULogo.png" width="20%" /></a>
+                    <a class="navbar-brand" href="index.php"><img src="img/NTULogo.png" width="20%" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
@@ -52,6 +52,7 @@
 			<div class="col-lg-12">
 				<div class="big-cta">
 					<div class="cta-text">
+						<h2>NTU SCE 2015/16</h2>
 						<h2>Web Demo - <span>Final Year Projects</span> and <span>URECA Projects</span></h2> 
 						<b>Here are the list of projects. Click on '<font color="#69bdc9">View Demo</font>' to learn more about the projects: </b>
 					</div>

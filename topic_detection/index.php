@@ -54,7 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="../img/NTULogo.png" width="20%" /></a>
+                    <a class="navbar-brand" href="../index.php"><img src="../img/NTULogo.png" width="20%" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
