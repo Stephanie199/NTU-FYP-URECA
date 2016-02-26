@@ -61,15 +61,17 @@ function getSentences($file){
     	$line = fgets($fi);
     	$parts = preg_split("/[\t]/", $line);
     	
-    	$result = trim($parts[3]);
-    	$word = trim($parts[0]);
+    	if (count($parts) == 4){
+    		$result = trim($parts[3]);
+    		$word = trim($parts[0]);
 
-    	#echo $result;
+    		#echo $result;
 
-    	if($result==0){
-    		$str = $str.$word." ";	
-    	}else{
-    		$str = $str.$word." . ";
+    		if($result==0){
+    			$str = $str.$word." ";	
+    		}else{
+    			$str = $str.$word." . ";
+    		}
     	}
     }
 
