@@ -128,14 +128,14 @@
         <div class="form-group">
           <div align="center"><h4>This is the text to be processed (without any punctuations):</h4></div> 
           <hr />
-          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php echo $cleanText; ?></h5></div>
+          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php if(!empty($_POST)){ echo $cleanText; }else{ echo ''; } ?></h5></div>
         </div>
       </div>
       <div class="row">
         <div class="form-group">
           <div align="center"><h4>Here are the sentences:</h4></div> 
           <hr />
-          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php echo $result; ?></h5></div>
+          <div class="span2 well" align="center"><h4 style="line-height:150%;"><?php if(!empty($_POST)){ echo $result; }else{ echo ''; } ?></h5></div>
         </div>
       </div>
     </div>
