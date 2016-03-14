@@ -1,10 +1,12 @@
 <?php
   include "en_sud_functions.php";
+  include "vi_sud_functions.php";
   include "en_data_preprocessing.php";
 
   
   if(!empty($_POST)){
     $text = strtolower($_POST["text"]);
+    $textUTF = mb_strtolower($_POST["text"], "UTF-8");
     $language = $_POST["language"];
 
     if(trim($text)==""){
@@ -29,8 +31,27 @@
 
         unlink($crfTestInput);
       }else{ //language = vietnamese
-        $cleanText = "Clean Text Here!";
-        $result = "Do Some Function Here!";
+        if ($language == 'vietnamese')
+        {
+          $tagInput = "data-vi/tagInput.txt";
+          $tagOutput = "data-vi/tagOutput.txt";
+          $model = "data-vi/model_TNO15.txt";
+          $crfTestInput = "data-vi/crfTestInput.txt";
+          $crfTestOutput = "data-vi/crfTestOutput.txt";
+          $tempResult = "data-vi/tempResult.txt";
+
+          $cleanText = removeString($textUTF);
+          writeToTextFileUTF($tagInput, $cleanText, "w");
+          execTag($tagInput, $tagOutput);
+          formatTagOutput($tagOutput, $crfTestInput);
+          execCrfTest($model, $crfTestInput, $crfTestOutput);
+
+
+          $sentences = getSentencesUTF ($crfTestOutput);
+          $result = highlightSentences($sentences);
+
+          unlink ($crfTestInput);
+        }
       }  
 
     }
