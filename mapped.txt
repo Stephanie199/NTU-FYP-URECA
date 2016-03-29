@@ -1,0 +1,89 @@
+20001	Asian Financial Crisis
+20002	Clinton Scandal
+20004	Timothy McVeigh- Sailor
+20005	Clinton-filipino Talks
+20006	Israel Politics
+20007	Hot Air Balloon
+20008	Casey Martin-Golf
+20009	Execution of Women
+20010	France Avalanche
+20011	Clinton’s Union Address
+20012	Pope’s Cuba Visit
+20013	Olympics
+20014	Poor countries & Development
+20015	Iraq & Weapons
+20016	WTC Theft
+20017	Babbitt Casino Probe
+20018	Abortion Bombings
+20019	Military Disasters
+20020	China Airlines Crash
+20021	Florida tornadoes
+20022	Diane Zamora Conviction
+20023	Algeria Bombings
+20024	Georgian President Attack
+20025	Taliban
+20026	Celebrity News
+20028	Crime in Seattle
+20029	Wall Street Finance
+20030	Oscar Schindler
+20031	Andy Thomas- Space Shuttle
+20032	US Army
+20033	Football
+20034	White house
+20035	Middle East
+20036	Crime in Florida
+20037	New York Mayor
+20039	Indian Congress
+20040	Crime in Israel
+20041	Delaware Crime
+20042	Space Travel
+20043	Daily News
+20044	Health&Drugs
+20046	Geography
+
+20047	Men’s Health
+20048	Basketball
+20050	Marine Life
+20052	Germany Elections
+20053	Election Laws
+20054	US-MiddleEast
+20056	Martin Luther King Junior
+20057	U.S Skating Association
+20059	Ohio Students Riot
+20060	Prisoners of War Museum
+20061	Kenyan Economy
+20062	Angola Economy
+20063	Crime in Colombia
+20064	World Harmony
+20065	NASA
+20066	National Football League
+20067	Ecological Disasters
+20068	Cancer Research
+20069	Jimmy Carter
+20070	India-Pakistan Relations
+20071	Middle east relations
+20072	Entertainment
+20074	Crime in Nigeria
+20075	US Immigration Laws
+20076	Indonesia Students Protests
+20077	Unabomber Trial
+20078	Denmark Union Workers
+20079	Crime in Turkey
+20082	Vandalism
+20083	Medical Conferences
+20084	Employment in US
+20085	Saudi Soccer Team
+20086	Michigan Worker Strikes
+20087	NBA Finals
+20088	Indonesia Riots
+20089	Afghanistan Earthquake
+20091	Germany Train Failures
+20092	Obesity Research
+20093	Political Strikes
+20094	Stolen Art
+20095	Turkish Military
+20096	Clinton’s China Visit
+20097	Healthy Old Age
+20098	Cuban Refugees
+20099	Violence & US
+20100	Goldman Sachs
